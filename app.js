@@ -92,7 +92,9 @@ donuts.push("lemon pie");
 console.log(donuts);
 
 //6 Use either the join() or toString() method to convert an array to a string.
-console.log(donuts.toString());
+donuts,join("🍩");
+console.log(donuts.join(","));
+
 
 //7 Write the command to make a copy of the array using slice. 
 // The copy should NOT include two donuts.
@@ -115,8 +117,27 @@ console.log(withSyed);
 
 
 //12 **Create a function called getdonuts() that will display all the donuts in your array and display on your page.
-function getdonuts () {document.write(donuts);} 
+function getdonuts(){
+    document.getElementById("types").innerHTML = donuts;
+}
 
 getdonuts ();
 
-    
+for (i=0; i<donuts.length; i++) {
+    console.log(donuts[i]);
+}
+
+console.log(donuts.join ("🌈"));
+console.log(donuts.toString());
+
+function myFunc() {
+    var show = btn.style.color = "red";
+    for (i=0; i<donuts.length; i++) {
+        document.getElementById("btn").innerHTML = donuts.sort() .join("🍩") + show;
+
+    }
+}
+//sort () puts in alphabetical orderr
+//toString() turns a number into a string or adds a , between strings
+
+//Challenge: Add a functionn that removes the donuts on click
